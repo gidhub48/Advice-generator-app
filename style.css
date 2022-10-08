@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background-color: var(--DarkBlue);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+p{
+    margin: 0;
+}
+header{
+    color: var(--NeonGreen);
+    text-align: center;
+}
+
+main {
+    position: relative;
+    max-width: 444px;top: 45%;
+    transform: translateY(-50%);
+    background-color: var(--DarkGrayishBlue);
+    margin: auto;
+    border-radius: 1rem;
+    padding: 3rem clamp(1rem,4vw,3rem) 4rem;
+}
+main .advice-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 155px;
+    margin: 1.5rem 0 2rem;
+}
+main .advice-content .advice {
+    color: var(--LightCyan);
+    font-size: 28px;
+}
+main .advice-divider {
+    width: 100%;
+}
+main #dice {
+    position: absolute;
+    left: 50%;top: 100%;
+    transform: translate(-50%,-50%);
+    padding: 0.85rem 1rem;
+    background-color: var(--NeonGreen);
+    border: 0;
+    border-radius: 50%;
+    transition: box-shadow 0.25s;
+}
+main #dice:hover {
+    box-shadow: 0 0 2rem var(--NeonGreen);
+}
+
+footer{
+    position: relative;top: 35%;
+}
