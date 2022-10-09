@@ -15,7 +15,7 @@ async function getAdvice(){
     const response = await fetch("https://api.adviceslip.com/advice",  { cache: "no-cache" });
     const getdata = await response.json()
     adviceid.innerHTML = getdata.slip.id
-    advicetext.innerHTML = getdata.slip.advice
+    advicetext.innerHTML = '""' + getdata.slip.advice + '""'
 }
 getAdvice()
 

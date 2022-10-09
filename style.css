@@ -41,7 +41,7 @@ main .advice-content {
     min-height: 155px;
     margin: 1.5rem 0 2rem;
 }
-main .advice-content .advice {
+main .advice-content {
     color: var(--LightCyan);
     font-size: 28px;
 }
